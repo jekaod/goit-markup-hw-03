@@ -21,7 +21,7 @@ body{
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height:1.71;
+    line-height:1.714;
     letter-spacing: 0.03em;
    
 }
@@ -230,16 +230,16 @@ h1, h2, h3, p, ul{
 
     display: flex;
     flex-wrap: wrap;
-    
+     
     margin-right: calc(-1 * var(--set-gap));
     margin-bottom: calc(-1 * var(--set-gap));
 }
 
 .feature.list .item{
-   
+   flex-basis: calc(100% / 4 - var(--set-gap) );
    margin-right: var(--set-gap);
    margin-bottom: var(--set-gap);
-   flex-basis: calc(100% / 4 - var(--set-gap)); 
+   
 }
 
 .feature-title{
@@ -249,7 +249,7 @@ h1, h2, h3, p, ul{
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.143;
     text-transform: uppercase;
 }
 
@@ -274,7 +274,7 @@ h1, h2, h3, p, ul{
 .work-list{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 60px) / 3 );
+    flex-basis: calc(100% / 3 - var(--set-gap) );
     margin-left: calc(-1 * var(--set-gap));
     margin-bottom: calc(-1 * var(--set-gap));
 }
@@ -295,7 +295,7 @@ h1, h2, h3, p, ul{
 .team .team-list{
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc(100% / 4 - var(--set-gap));
     margin-left: calc(-1 * var(--set-gap));
     margin-bottom: calc(-1 * var(--set-gap));
 }
@@ -417,7 +417,7 @@ padding: var(--set-gap) 0;
 .card-list.list{ 
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 60px)/ 3 );
+    flex-basis: calc(100% / 3 - var(--set-gap) );
     margin-top: calc(-1 * var(--set-gap));
     margin-right: calc(-1 * var(--set-gap));
 }
