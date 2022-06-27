@@ -61,12 +61,15 @@ h1, h2, h3, p, ul{
 .card-set{
     display: flex;
     flex-wrap: wrap;
-    
+    /* gap: var(--set-gap); */
     margin-left: calc(-1 * var(--set-gap));
     margin-top: calc(-1 * var(--set-gap))
 }
 
 .item{
+
+    /* flex-basis: calc((100% - (var(--card-item) - 1) * var(--set-gap)) / var(--card-item)); */
+
     flex-basis: calc(100% / var(--card-item) - var(--set-gap));
     margin-left: var(--set-gap);
     margin-top: var(--set-gap)
@@ -101,7 +104,7 @@ h1, h2, h3, p, ul{
     font-family: Raleway,cursive;
     font-size: 26px;
     font-weight: 700;
-    line-height: 1.44;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -234,7 +237,7 @@ h1, h2, h3, p, ul{
 /* Наши особенности */
 
 .hidden-title{
-    display:none;
+    visibility: hidden;
 }
 
 .feature-list .item{
@@ -290,7 +293,7 @@ h1, h2, h3, p, ul{
 
 .item .team-title{
     
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
     color: var(--title-text-color);
 }
@@ -319,22 +322,25 @@ h1, h2, h3, p, ul{
     background-color: var(--footer-bg-color);
     
 }
-
+.footer .logo{
+    margin-bottom: 20px;
+    display: block;
+}
 
  .logo-white{
     color: var(--portfolio-bgaccent-color);
     
 }
 .address{  
-    margin-top: 20px;
+    
     color: rgba(255, 255, 255, 0.6);
     font-style: inherit;
  }
- .address-link[target="_blank"] {
+ .address-item .[target="_blank"] {
     color: var(--primery-bg-color);
-    margin-bottom: 9px;
+    
  }
- .address-item .mail-link{
+ .address-list .address-item:not(:last-child) {
     margin-bottom: 9px;
  }
 
@@ -388,9 +394,18 @@ h1, h2, h3, p, ul{
 
 
 
-.project-list .filter-item {
-    
-   
+.project-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.option{
+    font-size: 16px;
+    line-height: 1.875;
 }
 
 
