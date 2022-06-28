@@ -237,11 +237,22 @@ h1, h2, h3, p, ul{
 /* Наши особенности */
 
 .hidden-title{
-    visibility: hidden;
+    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+           
 }
 
 .feature-list .item{
- --card-item:4
+    --card-item:4
 }
 
 .feature-title{
@@ -336,7 +347,7 @@ h1, h2, h3, p, ul{
     color: rgba(255, 255, 255, 0.6);
     font-style: inherit;
  }
- .address-item .[target="_blank"] {
+ .address-link {
     color: var(--primery-bg-color);
     
  }
@@ -354,19 +365,19 @@ h1, h2, h3, p, ul{
    display: flex;
    flex-wrap: wrap;
    margin-bottom: 50px;
-  
+   gap: 8px;
    justify-content: center;
  }
 
- .filter-list .filter-item:not(:last-child){
+ /* .filter-list .filter-item:not(:last-child){
     margin-right: 8px;
- }
+ } */
   
 .filter-button{
 
     padding: 6px 22px;
     border-radius: 4px;
-     border: none;
+    border: none;
     color: var(--title-text-color);
     background-color: var(--portfolio-button-color);
     font-weight: 500;
